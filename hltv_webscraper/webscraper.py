@@ -44,8 +44,8 @@ for player in players:
             Rating: {rating}
             Rounds Won: {player_team_score}
             Rounds Lost: {opponent_score}
-            Player Team Score: {}
-            Opponent Team Score: {}
+            Player Team Score: {player_team_score}
+            Opponent Team Score: {opponent_score}
             """)
 
 df = pd.DataFrame(dataframe, columns=['Data', 'Player Team', 'Opponent', 'Map', 'K-D', '+/-', 'Rating', 'Rounds Won', 'Rounds Lost', 'Player Team Score', 'Opponent Team Score'])
