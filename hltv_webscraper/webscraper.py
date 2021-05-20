@@ -44,7 +44,9 @@ for player in players:
             Rating: {rating}
             Rounds Won: {player_team_score}
             Rounds Lost: {opponent_score}
+            Player Team Score: {}
+            Opponent Team Score: {}
             """)
 
-df = pd.DataFrame(dataframe, columns=['Data', 'Player Team', 'Opponent', 'Map', 'K-D', '+/-', 'Rating', 'Rounds Won', 'Rounds Lost'])
+df = pd.DataFrame(dataframe, columns=['Data', 'Player Team', 'Opponent', 'Map', 'K-D', '+/-', 'Rating', 'Rounds Won', 'Rounds Lost', 'Player Team Score', 'Opponent Team Score'])
 df.to_excel("output.xlsx")
